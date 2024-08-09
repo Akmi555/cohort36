@@ -3,7 +3,10 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
-Using Liquibase changelogs, create a customer table in the DB for customers, use version 0.2.0. We do not take the shopping cart into account anywhere yet.
+1. Write the CustomerService interface (we take the methods from the presentation).
+2. Implement the CustomerController (we use all the service methods).
+3. We don’t take the shopping cart into account anywhere yet.
+4. *** Implement the ProductServiceImpl class (if necessary, add a repository on any of the studied technologies).
 
 </details>
 
@@ -12,13 +15,10 @@ Using Liquibase changelogs, create a customer table in the DB for customers, use
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>На русском</b></summary>
 
-**Задание 1.** 
-При помощи чейнджлогов Liquibase создайте таблицу customer в БД для покупателей,
-используйте версию 0.2.0. Корзину пока нигде не учитываем.
-
-**Задание 2.**
-Выполнить 2 раза и более процедуру создания Spring Boot проекта с помощью 
-Spring Initializr. 
+1. Написать интерфейс CustomerService (берём методы из презентации).
+2. Реализовать CustomerController (используем все методы сервиса).
+3. Корзину пока нигде не учитываем.
+4. *** Реализовать класс ProductServiceImpl (при необходимости добавив репозиторий на любой из изученных технологий).
 
 </details>
 

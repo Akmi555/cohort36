@@ -39,9 +39,9 @@ ___
 
 
 ## Практика
-- создание проекта в Spring Initializr
-- открытие проекта в IDE
-- подключение к СУБД с помощью yml - файла
-- знакомство с технологией Liquibase
-- написание changelog - файлов
+- создание REST контроллера Product
+    - проектирование endpoints для /product(s)
+- нужные Spring-аннотации
+- подключение слоя Service с помощью DI (dependency injection)
+
 

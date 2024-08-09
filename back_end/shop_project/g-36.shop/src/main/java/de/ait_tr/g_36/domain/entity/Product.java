@@ -1,4 +1,4 @@
-package de.ait_tr.g_36.shop.product;
+package de.ait_tr.g_36.domain.entity;
 
 import java.math.BigDecimal;
 import java.util.Objects;
