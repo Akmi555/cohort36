@@ -1,9 +1,7 @@
 
 <h3 style="text-align: center; padding-bottom: 14px">2024-02-02</h3>
 
-# Lesson plan No. 9 08/07/2024
-
-# Lesson plan #8 08/07/2024
+# Lesson plan No. 9 08/09/2024
 
 ## What we learned and did in the last lesson:
 - creating a project in Spring Initializr
@@ -24,7 +22,7 @@ What is REST API and how to do it correctly.
 
 ___
 
-# План занятия №8 07.08.2024
+# План занятия №9 09.08.2024
 
 ## Что мы узнали и сделали за прошлое занятие:
 - создание проекта в Spring Initializr

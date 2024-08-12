@@ -1,7 +1,7 @@
-package de.ait_tr.g_36.service;
+package de.ait_tr.g_36_shop.service;
 
-import de.ait_tr.g_36.domain.entity.Product;
-import de.ait_tr.g_36.service.interfaces.ProductService;
+import de.ait_tr.g_36_shop.domain.entity.Product;
+import de.ait_tr.g_36_shop.service.interfaces.ProductService;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -12,12 +12,12 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product save(Product product) {
-        return product;
+        return null;
     }
 
     @Override
-    public List<Product> getAllProducts() {
-        return List.of();
+    public List<Product> getAllActiveProducts() {
+        return null;
     }
 
     @Override

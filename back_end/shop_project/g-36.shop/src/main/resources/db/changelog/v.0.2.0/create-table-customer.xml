@@ -4,19 +4,15 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
-    <changeSet id="create-table-product" author="Andrey">
+    <changeSet id="create-table-customer" author="Andrey">
 
-        <createTable tableName="product">
+        <createTable tableName="customer">
 
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true"/>
             </column>
 
-            <column name="title" type="varchar(64)">
-                <constraints nullable="false" unique="true"/>
-            </column>
-
-            <column name="price" type="decimal(7,2)">
+            <column name="name" type="varchar(64)">
                 <constraints nullable="false"/>
             </column>
 
