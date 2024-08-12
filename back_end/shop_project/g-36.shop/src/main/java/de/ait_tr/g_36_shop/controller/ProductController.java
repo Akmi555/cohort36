@@ -11,6 +11,7 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductController {
 
+    // DI
     private final ProductService service;
 
     public ProductController(ProductService service) {
