@@ -24,6 +24,8 @@
     "code/src/main/java/de/ait_tr/g_36_shop/repository/ProductRepository.java",
     "code/src/main/java/de/ait_tr/g_36_shop/service",
     "code/src/main/java/de/ait_tr/g_36_shop/service/interfaces",
+    "code/src/main/java/de/ait_tr/g_36_shop/service/interfaces/CustomerService.java",
+    "code/src/main/java/de/ait_tr/g_36_shop/service/interfaces/ProductService.java",
     "code/src/main/java/de/ait_tr/g_36_shop/service/mapping",
     "code/src/main/java/de/ait_tr/g_36_shop/service/CustomerServiceImpl.java",
     "code/src/main/java/de/ait_tr/g_36_shop/service/ProductServiceImpl.java",
