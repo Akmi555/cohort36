@@ -4,13 +4,14 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
-    <changeSet id="create-foreign-key-cart-to-customer" author="Andrey">
+    <changeSet id="create-foreign-key-cart-to-customer" author="Author">
 
-        <addForeignKeyConstraint baseTableName="cart"
-                                 baseColumnNames="customer_id"
-                                 constraintName="fk_cart_to_customer"
-                                 referencedTableName="customer"
-                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint
+                baseTableName="cart"
+                baseColumnNames="customer_id"
+                constraintName="fk_cart_to_customer"
+                referencedTableName="customer"
+                referencedColumnNames="id"/>
 
     </changeSet>
 

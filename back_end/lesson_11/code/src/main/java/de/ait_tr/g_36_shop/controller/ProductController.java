@@ -1,7 +1,7 @@
 package de.ait_tr.g_36_shop.controller;
 
 import de.ait_tr.g_36_shop.domain.dto.ProductDto;
-import de.ait_tr.g_36_shop.domain.entity.Product;
+// import de.ait_tr.g_36_shop.domain.entity.Product;
 import de.ait_tr.g_36_shop.service.interfaces.ProductService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +14,7 @@ import java.util.List;
 @Tag(name = "Product controller", description = "Controller for various operations with Products") // add for Swagger
 public class ProductController {
 
+    // DI
     private final ProductService service;
 
     public ProductController(ProductService service) {
@@ -25,10 +26,10 @@ public class ProductController {
     // Create: POST -> localhost:8080/products
 
     @PostMapping
-    public ProductDto save(
-            @RequestBody
-            @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Instance of a Product")
-            ProductDto product
+    public ProductDto save(@RequestBody
+                        @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Instance of a Product")
+                        ProductDto product
+
     ) {
         return service.save(product);
     }
