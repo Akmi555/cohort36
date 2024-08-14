@@ -197,16 +197,18 @@ http://api.example.com/v1/store/products✅
 
 ##DTO
 
-Entity - User:
+Entity - User - СУБД:
 - id
 - nickname
 - email
+- role
 - password
 
 Dto - UserDto:
 - id
 - nickname
 - email
+- role
 - ~~password~~
 
 ## Spring Boot JPA (Java Persistence API)

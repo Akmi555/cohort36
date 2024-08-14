@@ -16,15 +16,17 @@ public interface ProductMappingService {
 
     ProductDto mapEntityToDto(Product entity);
 
-//    public Product mapDtoToEntry(ProductDto dto){
+//    {
 //        Product entity = new Product();
+//        // entity.setId(dto.getId());
 //        entity.setTitle(dto.getTitle());
 //        entity.setPrice(dto.getPrice());
 //        entity.setActive(true);
 //        return entity;
 //    }
-//
-//    public ProductDto mapEntryToDto(Product entity){
+
+
+//    {
 //        ProductDto dto = new ProductDto();
 //        dto.setId(entity.getId());
 //        dto.setTitle(entity.getTitle());
