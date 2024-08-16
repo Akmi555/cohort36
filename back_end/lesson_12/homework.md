@@ -3,10 +3,8 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
-1. Create a DTO for the buyer.
-2. Implement a mapping service for the buyer.
-3. Improve the controller and service so that they work with the DTO.
-4. Attach screenshots from Postman with the results of the methods to the homework code.
+1. Manually reproduce all the code written in class in your project.
+2. Test authentication and authorization using Postman.
 
 </details>
 
@@ -15,10 +13,8 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>На русском</b></summary>
 
-1. Создать ДТО для покупателя (customer).
-2. Реализовать маппинг сервис для покупателя.
-3. Доработать контроллер и сервис, чтобы они работали с ДТО.
-4. К коду домашнего задания приложить скриншоты из Постмана с результатами работы методов.
+1. В своём проекте вручную воспроизвести весь код, который писали на занятии.
+2. Протестировать работу аутентификации и авторизации при помощи Постмана.
 
 </details>
 
