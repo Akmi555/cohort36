@@ -1,7 +1,7 @@
 package de.ait_tr.g_36_shop.controller;
 
 import de.ait_tr.g_36_shop.domain.dto.ProductDto;
-// import de.ait_tr.g_36_shop.domain.entity.Product;
+import de.ait_tr.g_36_shop.domain.entity.Product;
 import de.ait_tr.g_36_shop.service.interfaces.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -16,7 +16,6 @@ import java.util.List;
 @Tag(name = "Product controller", description = "Controller for various operations with Products") // add for Swagger
 public class ProductController {
 
-    // DI
     private final ProductService service;
 
     public ProductController(ProductService service) {
@@ -32,6 +31,7 @@ public class ProductController {
     // 2. Получить продукт по идентификатору могут только аутентифицированные пользователи с любой ролью
     // 3. Сохранить продукт в базу данных может только администратор
 
+
     @PostMapping
     public ProductDto save(
             @RequestBody
@@ -42,6 +42,7 @@ public class ProductController {
     }
 
     // Read: GET -> localhost:8080/products?id=3
+
     @Operation(
             summary = "Get product by id",
             description = "Getting one product that exists in the database by its id"
@@ -55,29 +56,20 @@ public class ProductController {
         return service.getById(id);
     }
 
-//    public List<ProductDto> get(@RequestParam(required = false) Long id) {
-//        if (id == null) {
-//            return service.getAllActiveProducts();
-//        } else {
-//            ProductDto product = service.getById(id);
-//            return product == null ? null : List.of(product);
-//        }
-//    }
-
     @GetMapping("/all")
     public List<ProductDto> getAll() {
-        // обращаемся к сервису и запрашиваем все продукты
+        // обращаемся к сервису и получаем все активные продукты
         return service.getAllActiveProducts();
     }
 
-    // Update: PUT -> localhost:8080/products
+// Update: PUT -> localhost:8080/products
 
     @PutMapping
     public ProductDto update(@RequestBody ProductDto product) {
         return service.update(product);
     }
 
-    // Delete: DELETE -> localhost:8080/products?id=3
+// Delete: DELETE -> localhost:8080/products?id=3
 
     @DeleteMapping
     public void delete(
