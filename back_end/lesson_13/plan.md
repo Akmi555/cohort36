@@ -42,7 +42,7 @@ We implemented **Spring Security** into the project:
 
 ___
 
-# План занятия №12 16.08.2024
+# План занятия №13 19.08.2024
 
 ## Что мы узнали и сделали за прошлое занятие:
 Spring Security - это ... 
@@ -50,7 +50,7 @@ Spring Security - это ...
   - Authorization
 
 Выполнили внедрение **Spring Security** в проект:
-- User
+- User 
 - Role
 - changelog v.0.4.0
 - шифровальщик паролей 
