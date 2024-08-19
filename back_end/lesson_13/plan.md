@@ -45,26 +45,29 @@ ___
 # План занятия №13 19.08.2024
 
 ## Что мы узнали и сделали за прошлое занятие:
-Spring Security - это ... 
-  - Authentication
-  - Authorization
+Spring Security - это для обеспечения аутентификации и авторизации пользователей
+  - Authentication - проверка имени пользователя (уникально!) и пароля
+  - Authorization - предоставление прав на основании правил по роли
 
 Выполнили внедрение **Spring Security** в проект:
-- User 
-- Role
-- changelog v.0.4.0
-- шифровальщик паролей 
-- заполняем таблицы User, Role
-- UserDetails
-- Repository
+- User - мы его создали добавили "кучу" аннотаций для Spring, JPA 
+- Role - аналогично User
+- changelog v.0.4.0 - создали таблицы и связи 
+- шифровальщик паролей - BCryptPasswordEncoder().encode()
+- заполняем таблицы User, Role - ROLE_ADMIN, ROLE_USER
+- UserDetails - им расширили User
+- Repository - создаем
   - UserRepository
+    - findByUsername()
   - RoleRepository
-- UserService
+    - findByTitle()
+- UserService - создаем 
+  - метод для извлечения UserDetails из репозитория
 - ProductController
-  - getAll
-  - getById
+  - getAll - переписали на endpoint /products/all
+  - getById - переписали /products?id=5
 - security/config
-  - SecurityConfig
+  - SecurityConfig - создаем, пишем SecurityFilterChain
 - тестирование в Postman
 
 ## Тема сегодняшнего занятия:
