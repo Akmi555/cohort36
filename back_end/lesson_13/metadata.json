@@ -4,7 +4,7 @@
   "homework": "homework.md",
   "code": [
     "code/src",
-    back_end/lesson_13/code/src/main",",
+    "code/src/main",
     "code/src/main/java",
     "code/src/main/java/de",
     "code/src/main/java/de/ait_tr",
