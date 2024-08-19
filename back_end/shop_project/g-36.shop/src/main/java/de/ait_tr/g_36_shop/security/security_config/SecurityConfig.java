@@ -1,5 +1,6 @@
 package de.ait_tr.g_36_shop.security.security_config;
 
+import io.swagger.v3.oas.annotations.info.Contact;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -22,18 +23,17 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
+    @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
-                .csrf(AbstractHttpConfigurer::disable)
-                .sessionManagement(x->x
+                .csrf(AbstractHttpConfigurer :: disable)
+                .sessionManagement(x -> x
                         .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
                 .httpBasic(Customizer.withDefaults())
-                .authorizeHttpRequests(x->x
+                .authorizeHttpRequests(x -> x
                         .requestMatchers(HttpMethod.GET, "/products/all").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/products").hasAnyRole("ADMIN","USER")
+                        .requestMatchers(HttpMethod.GET, "/products").hasAnyRole("ADMIN", "USER")
                         .requestMatchers(HttpMethod.POST, "/products").hasRole("ADMIN")
                 ).build();
-
     }
-
 }

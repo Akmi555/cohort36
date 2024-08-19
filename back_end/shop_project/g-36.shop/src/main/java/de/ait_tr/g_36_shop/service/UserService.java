@@ -14,13 +14,13 @@ public class UserService implements UserDetailsService {
     public UserService(UserRepository repository) {
         this.repository = repository;
     }
-    
+
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return repository.findByUsername(username).orElseThrow(
-                ()->new UsernameNotFoundException(
-                        String.format("User %s not found.", username)
-                )
+                ()-> new UsernameNotFoundException(
+                        String.format("User %s not found", username))
         );
     }
 }

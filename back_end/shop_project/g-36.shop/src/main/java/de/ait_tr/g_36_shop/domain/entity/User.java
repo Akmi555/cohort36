@@ -15,7 +15,7 @@ import java.util.Set;
 public class User implements UserDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY )
     @Column(name = "id")
     private Long id;
 
@@ -25,9 +25,9 @@ public class User implements UserDetails {
     @Column(name = "password")
     private String password;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER) // "жадная" загрузка из БД
     @JoinTable(name = "user_role",
-                joinColumns = @JoinColumn(name = "user_id"),
+            joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
     private Set<Role> roles;
@@ -40,23 +40,27 @@ public class User implements UserDetails {
         this.id = id;
     }
 
-    @Override
-    public String getUsername() {
+    public String getName() {
         return username;
     }
 
-    public void setUsername(String username) {
+    public void setName(String username) {
         this.username = username;
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
+        return roles;
     }
 
     @Override
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return "";
     }
 
     public void setPassword(String password) {
@@ -68,7 +72,7 @@ public class User implements UserDetails {
     }
 
     public void setRole(Set<Role> role) {
-        this.roles = role;
+        this.roles = roles;
     }
 
     @Override
@@ -88,10 +92,9 @@ public class User implements UserDetails {
         return String.format("User: id - %d, username - %s, roles - %s", id, username, roles == null ? "empty" : roles);
     }
 
-    // Метод для получения зашифрованного пароля
-    // для добавления пользователей в БД вручную
+//     Метод для получения зашифрованного пароля
+//     для добавления пользователей в БД вручную
 //    public static void main(String[] args) {
 //        System.out.println(new BCryptPasswordEncoder().encode("111"));
 //    }
-
 }

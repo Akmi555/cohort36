@@ -22,8 +22,6 @@ public class ProductDto {
     @Schema(description = "Product price", example = "190.00") // add for Swagger
     private BigDecimal price;
 
-    // private boolean active;
-
     public Long getId() {
         return id;
     }
@@ -62,7 +60,7 @@ public class ProductDto {
 
     @Override
     public String toString() {
-        return String.format("Product: id - %d, title - %s, price - %s, active - %s",
+        return String.format("Product DTO: id - %d, title - %s, price - %s, active - %s",
                 id, title, price);
     }
 }

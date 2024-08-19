@@ -4,11 +4,10 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
-    <changeSet id="create-table-cart" author="Author">
-
-<!--   1 : 1     -->
+    <changeSet id="create-table-cart" author="Andrey">
 
         <createTable tableName="cart">
+
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true"/>
             </column>
@@ -20,6 +19,5 @@
         </createTable>
 
     </changeSet>
-
 
 </databaseChangeLog>
