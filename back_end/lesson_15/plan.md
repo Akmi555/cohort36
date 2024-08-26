@@ -4,38 +4,103 @@
 # Lesson plan No. 15 08/23/2024
 
 ## What we learned and did in the last lesson:
+Finished the Shop application:
 
-Integration tests
+- changelog v.0.5.0
+- table ...
+- primary keys
+
+- Cart, CartDto - classes
+
+- registered relationships using annotations
+- Cart - Customer - ...
+- Cart - Products - ...
+
+- Customer - CustomerDto - classes
+-
+- CustomerRepository
+- method ...
+
+- cart functionality (see the Project presentation)
+
+- CustomerController
+- ...
+- CustomerServiceImp
+- ...
 
 ## Topic of today's lesson:
-Finishing the application
-- Cart, CartDto
-- Cart - Products
-- Customer - CustomerDto
-- CustomerRepository
-- Cart functionality (see the Project presentation)
-- CustomerController
-- CustomerServiceImp
+- Exceptions Handling:
+* Spring exception handler
+* Exception handling process
+
+- Validation:
+- Annotations used for validation
+- Validation implementation
 
 ## Practice
-Fulfilling the plan - see today's lesson.
+Fulfilling the plan:
+- adding the exception_handling layer
+- exceptions
+- FirstTestException
+- SecondTestException
+- ThirdTestException
+- CommonAdvice
+- Response
+
+- adding validation using Spring annotations
+- @NotNull
+- @NotBlank
+- @Pattern
 
 ___
 
-# План занятия №15 23.08.2024
+# План занятия №16 26.08.2024
 
 ## Что мы узнали и сделали за прошлое занятие:
-Интеграционные тесты
+Доделывали приложение Shop: 
+  - changelog v.0.5.0
+    - таблица ...
+    - primary keys
+    
+  - Cart, CartDto - классы
+
+  - прописали с помощью аннотаций связи
+    - Cart - Customer - ...
+    - Cart - Products - ...
+
+- Customer - CustomerDto - классы
+- 
+- CustomerRepository
+  - метод ...
+
+- функционал корзины (см. презентацию о Проекте)
+
+- CustomerController
+  - ...
+- CustomerServiceImp
+  - ...
 
 ## Тема сегодняшнего занятия:
-Доделываем приложение
-- Cart, CartDto
-- Cart - Products
-- Customer - CustomerDto
-- CustomerRepository
-- функционал корзины (см. презентацию о Проекте) 
-- CustomerController
-- CustomerServiceImp
+- Exceptions Handling:
+  * Обработчик исключений Spring
+  * Процесс обработки исключений
+
+- Validation:
+  - Аннотации, используемые для валидации
+  - Внедрение валидации
 
 ## Практика
-Выполняем план - см. сегодняшнее занятие.
+Выполняем план:
+- добавляем слой exception_handling
+  - exceptions
+    - FirstTestException
+    - SecondTestException
+    - ThirdTestException
+  - CommonAdvice
+  - Response
+
+  - добавляем валидацию с помощью аннотаций Spring
+    - @NotNull
+    - @NotBlank
+    - @Pattern
+
