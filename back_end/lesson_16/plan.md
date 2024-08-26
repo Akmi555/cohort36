@@ -1,7 +1,7 @@
 
 <h3 style="text-align: center; padding-bottom: 14px">2024-02-02</h3>
 
-# Lesson plan No. 15 08/23/2024
+# Lesson plan No. 15 08/26/2024
 
 ## What we learned and did in the last lesson:
 Finished the Shop application:
@@ -59,26 +59,27 @@ ___
 ## Что мы узнали и сделали за прошлое занятие:
 Доделывали приложение Shop: 
   - changelog v.0.5.0
-    - таблица ...
-    - primary keys
+    - таблица cart-product
+    - primary keys cart_id-product_id
     
-  - Cart, CartDto - классы
+  - Cart, CartDto - классы, описывают корзину с продуктами
 
   - прописали с помощью аннотаций связи
-    - Cart - Customer - ...
-    - Cart - Products - ...
+    - Cart - Customer - @OneToOne
+    - Cart - Products - ManyToMany
 
 - Customer - CustomerDto - классы
-- 
+  
 - CustomerRepository
-  - метод ...
+  - метод FindByName(String name)
 
 - функционал корзины (см. презентацию о Проекте)
-
+  - написали его в классе Cart
+  
 - CustomerController
-  - ...
+  - исправляли тип Customer CustomerDto
 - CustomerServiceImp
-  - ...
+  - исправляли тип Customer CustomerDto
 
 ## Тема сегодняшнего занятия:
 - Exceptions Handling:
