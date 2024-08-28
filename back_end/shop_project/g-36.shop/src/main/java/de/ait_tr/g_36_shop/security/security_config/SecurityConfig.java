@@ -42,10 +42,11 @@ public class SecurityConfig {
                 .httpBasic(AbstractHttpConfigurer::disable) // отключили базовую авторизацию
                 .addFilterAfter(filter, UsernamePasswordAuthenticationFilter.class) // добавили свой фильтр
                 .authorizeHttpRequests(x -> x
-                        .requestMatchers(HttpMethod.GET, "/products/all").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/products").hasAnyRole("ADMIN", "USER")
-                        .requestMatchers(HttpMethod.POST, "/products").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/refresh").permitAll() // разрешаем всем доступ к этим endpoints
+//                        .requestMatchers(HttpMethod.GET, "/products/all").permitAll()
+//                        .requestMatchers(HttpMethod.GET, "/products").hasAnyRole("ADMIN", "USER")
+//                        .requestMatchers(HttpMethod.POST, "/products").hasRole("ADMIN")
+//                        .requestMatchers(HttpMethod.POST, "/auth/login", "/auth/refresh").permitAll() // разрешаем всем доступ к этим endpoints
+                                .anyRequest().permitAll()
                 ).build();
     }
 }

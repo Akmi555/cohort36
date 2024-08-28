@@ -28,7 +28,7 @@ public class TokenService  {
     // constructor, в который мы передадим секретные фразы
     // https://www.devglan.com/online-tools/hmac-sha256-online - для генерации секретных фраз
     public TokenService(
-            @Value ("${key.access}") String accessSecretPhrase,
+            @Value("${key.access}") String accessSecretPhrase,
             @Value("${key.refresh}") String refreshSecretPhrase,
             RoleRepository roleRepository
     ) {

@@ -1,7 +1,7 @@
 
 <h3 style="text-align: center; padding-bottom: 14px">2024-02-02</h3>
 
-# Lesson plan No. 15 08/26/2024
+# Lesson plan No. 16 08/26/2024
 
 ## What we learned and did in the last lesson:
 Finished the Shop application:

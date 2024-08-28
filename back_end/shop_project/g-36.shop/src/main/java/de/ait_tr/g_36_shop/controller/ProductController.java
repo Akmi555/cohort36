@@ -2,6 +2,8 @@ package de.ait_tr.g_36_shop.controller;
 
 import de.ait_tr.g_36_shop.domain.dto.ProductDto;
 import de.ait_tr.g_36_shop.domain.entity.Product;
+import de.ait_tr.g_36_shop.exception_handling.Response;
+import de.ait_tr.g_36_shop.exception_handling.exceptions.FirstTestException;
 import de.ait_tr.g_36_shop.service.interfaces.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -102,4 +104,16 @@ public class ProductController {
     public BigDecimal getAveragePrice() {
         return service.getAllActiveProductsAveragePrice();
     }
+
+    // user call product with wrong id
+    // ПЛЮС - точечно настраиваем обработчик ошибок именно для данного контроллера,
+    // если нам требуется разная логика обработки исключений в разных контроллерах
+    // МИНУС - если нам не требуется разная логика для разных контроллеров,
+    // придётся создавать такие обработчики в каждом контроллере отдельно
+
+    @ExceptionHandler(FirstTestException.class)
+    public Response handException(FirstTestException e){
+        return new Response(e.getMessage());
+    }
+
 }
