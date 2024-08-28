@@ -11,7 +11,7 @@ public class HelloController {
 
     private String hello;
 
-    public HelloController(@Value("${messages.hello}") String hello) {
+    public HelloController(@Value("${message.hello}") String hello) {
         this.hello = hello;
     }
 
