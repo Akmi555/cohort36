@@ -18,7 +18,7 @@ ___
   - CommonAdvice
   - Response
 
-  - добавили валидацию с помощью аннотаций Spring
+  - добавили валидацию с помощью аннотаций Spring в класс Product
     - @NotNull
     - @NotBlank
     - @Pattern
@@ -27,7 +27,9 @@ ___
 ## Тема сегодняшнего занятия:
 - Deployment - установка приложения на сервер в Интернете
 
-
 ## Практика
-
+- Docker
+- HelloController
+- DigitalOceanDataSourceConfiguration
+- deployment
 

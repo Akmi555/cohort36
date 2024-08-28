@@ -60,7 +60,7 @@ class ProductControllerTest {
     private final String ALL_ENDPOINT = "/all";
     private final String ID_PARAM_TITLE = "?id=";
 
-    private final String BEARER_PREFIX = "Bearer ";
+    private final String BEARER_PREFIX = "Bearer";
     private final String AUTH_HEADER_NAME = "Authorization";
 
     @BeforeEach
