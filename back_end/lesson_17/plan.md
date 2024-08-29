@@ -3,7 +3,28 @@
 
 # Lesson plan No. 17 08/28/2024
 
+## What we learned and did in the last lesson:
+- added an exception_handling layer
+- exceptions
+- FirstTestException
+- SecondTestException
+- ThirdTestException
+- CommonAdvice
+- Response
 
+- added validation using Spring annotations to the Product class
+- @NotNull
+- @NotBlank
+- @Pattern
+
+## Topic of today's lesson:
+- Deployment - installing an application on a server on the Internet
+
+## Practice
+- Docker
+- HelloController
+- DigitalOceanDataSourceConfiguration
+- deployment
 
 ___
 
