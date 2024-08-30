@@ -4,34 +4,7 @@
   "homework": "homework.md",
   "code": [
 
-    "code/homework",
-    "code/homework/CommonAdvice.java",
-    "code/homework/NoActiveProductsException.java",
-    "code/homework/ProductNotFoundException.java",
-    "code/homework/ProductServiceImpl.java",
-    "code/homework/Response.java",
-    "code/homework/SavingProductException.java",
-    "code/src",
-    "code/src/main",
-    "code/src/main/java",
-    "code/src/main/java/de",
-    "code/src/main/java/de/ait_tr",
-    "code/src/main/java/de/ait_tr/g_36_shop",
-    "code/src/main/java/de/ait_tr/g_36_shop/config",
-    "code/src/main/java/de/ait_tr/g_36_shop/config/DigitalOceanDataSourceConfiguration.java",
-    "code/src/main/java/de/ait_tr/g_36_shop/config/SwaggerConfig.java",
-    "code/src/main/java/de/ait_tr/g_36_shop/controller",
-    "code/src/main/java/de/ait_tr/g_36_shop/domain",
-    "code/src/main/java/de/ait_tr/g_36_shop/exception_handling",
-    "code/src/main/java/de/ait_tr/g_36_shop/hello",
-    "code/src/main/java/de/ait_tr/g_36_shop/hello/HelloController.java",
-    "code/src/main/java/de/ait_tr/g_36_shop/repository",
-    "code/src/main/java/de/ait_tr/g_36_shop/security",
-    "code/src/main/java/de/ait_tr/g_36_shop/service",
-    "code/src/main/java/de/ait_tr/g_36_shop/ShopApplication.java",
-    "code/src/main/resources",
-    "code/src/test",
-    "code/Dockerfile"
+
 
   ]
 }
