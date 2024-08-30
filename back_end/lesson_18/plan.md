@@ -24,8 +24,11 @@ ___
 
 ## Что мы узнали и сделали за прошлое занятие:
 - Deployment - установка приложения на сервер в Интернете
-- Docker
-- HelloController
+  - СУБД - хранения данных (pgAdmin)
+  - Java (17) - приложение + JVM 
+  - Maven - собирает проект 
+- Docker - виртуализация ПО у себя внутри
+- HelloController - позволяет понять, какое приложение работает (на локале или в Интернете)
 - DigitalOceanDataSourceConfiguration
 - deployment
 

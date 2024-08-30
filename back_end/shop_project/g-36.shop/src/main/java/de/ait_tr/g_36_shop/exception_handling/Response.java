@@ -5,9 +5,15 @@ import java.util.Objects;
 public class Response {
 
     private String message;
+    private String additionalMessage;
 
     public Response(String message) {
         this.message = message;
+    }
+
+    public Response(String message, String additionalMessage) {
+        this.message = message;
+        this.additionalMessage = additionalMessage;
     }
 
     @Override
@@ -18,12 +24,9 @@ public class Response {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hashCode(message);
-    }
-
-    @Override
     public String toString() {
-        return "Response: message - " + message;
+        return String.format("Response: message - %s%s",
+                message,
+                additionalMessage == null ? "" : ", additionalMessage: " + additionalMessage);
     }
 }
