@@ -1,7 +1,7 @@
 <details>
   <summary style="cursor: pointer;"><b>English</b></summary>
 
-# Lesson 17
+# Lesson 18
 
 ### 1. Objects and Dependencies
 - **JavaMailSender**: This is a Spring Framework interface that abstracts the functionality of sending emails. This abstraction allows the developer to use different mail protocol implementations without changing the core code.
@@ -103,7 +103,7 @@ Freemarker is powerful and flexible, supporting complex data manipulation and te
 <details style="padding-top: 18px">
   <summary style="cursor: pointer;"><b>На русском</b></summary>
 
-# Lesson 17
+# Lesson 18
 
 ### 1. Объекты и зависимости
 - **JavaMailSender**: Это интерфейс Spring Framework, который абстрагирует функционал отправки электронной почты. За счет этой абстракции разработчик может использовать различные реализации почтовых протоколов без изменения основного кода.
