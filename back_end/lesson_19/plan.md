@@ -2,7 +2,31 @@
 
 # Lesson plan No. 19 09/02/2024
 
+## What we learned and did in the last lesson:
+- a mailbox for sending emails to Gmail.com:
+- two-factor authentication
+- getting a password for the application
+- changing tables in the database:
+- user: added fields -
+- table for codes
+- created a ConfirmationCode class
+- extended the User class with fields
+- made a file with a letter template
+- made a ConfirmationCodeRepository repository
+- created a ConfirmationService.java interface
+- implemented ConfirmationServiceImpl.java
 
+## Topic of today's lesson:
+- finish sending a letter to the user upon registration
+
+- new topic:
+1. Implementation of file upload to Digital Ocean.
+2. Implementation of the functionality of adding an image to a product.
+
+see the Theory section.
+
+## Practice
+- finishing sending a letter
 
 ___
 
@@ -33,5 +57,5 @@ ___
 
 ## Практика
 - доделываем отправку письма
-- делаем "основу" для хранения images
+
 

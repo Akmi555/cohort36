@@ -7,6 +7,11 @@
 2. Activation should not be successful if the code has expired.
 3. Until activation, the user should not be allowed to perform any actions in the system that require authorization.
 
+=====================
+1. Get the code from the request via the link
+2. Find the user by this code
+3. Check if the code has expired
+
 
 </details>
 
