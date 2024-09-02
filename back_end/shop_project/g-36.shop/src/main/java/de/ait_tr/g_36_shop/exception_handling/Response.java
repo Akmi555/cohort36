@@ -16,6 +16,14 @@ public class Response {
         this.additionalMessage = additionalMessage;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public String getAdditionalMessage() {
+        return additionalMessage;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

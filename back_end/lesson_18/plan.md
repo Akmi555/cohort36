@@ -1,6 +1,6 @@
 <h3 style="text-align: center; padding-bottom: 14px">2024-02-02</h3>
 
-# Lesson plan No. 17 08/28/2024
+# Lesson plan No. 18 08/28/2024
 
 ## What we learned and did in the last lesson:
 - Deployment - installing an application on a server on the Internet
@@ -20,7 +20,7 @@ Sending an email
 
 ___
 
-# План занятия №17 28.08.2024
+# План занятия №18 28.08.2024
 
 ## Что мы узнали и сделали за прошлое занятие:
 - Deployment - установка приложения на сервер в Интернете

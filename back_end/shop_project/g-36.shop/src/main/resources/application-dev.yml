@@ -15,7 +15,7 @@ spring:
 
   mail:
     username: leonid.kleimann@ait-tr.de
-    password: cawitonzjoluldgl
+    password: waolcwihiwmhsnph
     host: smtp.gmail.com
     port: 587
     properties:

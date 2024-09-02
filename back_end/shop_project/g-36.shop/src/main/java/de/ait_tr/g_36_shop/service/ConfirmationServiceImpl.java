@@ -18,6 +18,7 @@ public class ConfirmationServiceImpl implements ConfirmationService {
         this.repository = repository;
     }
 
+
     @Override
     public String generateConfirmationCode(User user) {
 
@@ -30,7 +31,7 @@ public class ConfirmationServiceImpl implements ConfirmationService {
         String code = UUID.randomUUID().toString();
 
         // create object
-        ConfirmationCode entity = new ConfirmationCode(code, expired, user);
+        ConfirmationCode entity = new ConfirmationCode(code, expired, user); // create new code
 
         // save to repository
         repository.save(entity);
