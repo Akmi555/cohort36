@@ -4,5 +4,19 @@
   "homework": "homework.md",
   "code": [
 
+    "code",
+    "code/mail_sending",
+    "code/mail_sending/homework",
+    "code/mail_sending/homework/AuthService.java",
+    "code/mail_sending/homework/CommonAdvice.java",
+    "code/mail_sending/homework/ConfirmationFailedException.java",
+    "code/mail_sending/homework/ConfirmationService.java",
+    "code/mail_sending/homework/ConfirmationServiceImpl.java",
+    "code/mail_sending/homework/RegistrationController.java",
+    "code/mail_sending/homework/SecurityConfig.java",
+    "code/mail_sending/homework/UserService.java",
+    "code/mail_sending/homework/UserServiceImpl.java",
+    "code/link_to_git.md"
+
   ]
 }
