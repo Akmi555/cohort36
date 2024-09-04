@@ -9,6 +9,7 @@ import de.ait_tr.g_36_shop.repository.ProductRepository;
 import de.ait_tr.g_36_shop.service.interfaces.ProductService;
 import de.ait_tr.g_36_shop.service.mapping.ProductMappingService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -99,5 +100,14 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public BigDecimal getAllActiveProductsAveragePrice() {
         return null;
+    }
+
+    @Override
+    @Transactional
+    public void attachImage(String imgUrl, String productTitle) {
+        Product product = repository.findByTitle(productTitle).orElseThrow(
+                ()-> new RuntimeException("Product not found.")
+        );
+        product.setImage(imgUrl);
     }
 }

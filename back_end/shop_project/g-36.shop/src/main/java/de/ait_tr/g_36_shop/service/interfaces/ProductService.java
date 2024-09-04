@@ -17,4 +17,6 @@ public interface ProductService {
     long getAllActiveProductsQuantity();
     BigDecimal getAllActiveProductsTotalPrice();
     BigDecimal getAllActiveProductsAveragePrice();
+    void attachImage(String imgUrl, String productTitle);
+
 }
